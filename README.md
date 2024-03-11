@@ -1,0 +1,2 @@
+# CSC512_4BSA_LRU
+CSC512C - G02 - Group 2 (4 Way BSA + LRU)
