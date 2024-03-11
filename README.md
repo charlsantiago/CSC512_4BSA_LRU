@@ -2,6 +2,8 @@
 CSC512C - G02 - Group 2 (4 Way BSA + LRU)
 ----
 ## Temporary README.md
+![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/e39a5d03-d005-4c76-a2b6-92f30d421caf)
+
 
 Design a cache simulation system and analyze the various test set scenarios of the assigned cache mapping and replacement policy.<br>
 General Directions: <br>
