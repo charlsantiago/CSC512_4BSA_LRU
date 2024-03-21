@@ -23,10 +23,17 @@ class Cache_GUI(tk.Tk):
             return False
 
     def create_widgets(self):
-        label = tk.Label(self, text="Cache Simulator", font=("Arial", 20, 'bold'), fg='white', bg='black')
-        label.pack(pady=20)
+        label = tk.Label(self, text="------------------------------------------", font=("Arial", 20, 'bold'), fg='white', bg='black')
 
-        input_frame = tk.Frame(self, bg='black')
+        label.pack(pady=5)
+        label = tk.Label(self, text="Cache Simulator", font=("Arial", 20, 'bold'), fg='white', bg='black')
+        label.pack(pady=0)
+        label = tk.Label(self, text="4-Way Block Set Associative (Least Recently Used)", font=("Arial", 15, 'bold'), fg='white', bg='black')
+        label.pack(pady=5)
+
+
+        input_frame = tk.Frame(self, bg='white')
+        #input_frame = tk.Frame(self, bg='black')
         input_frame.pack(side=tk.TOP, padx=20, pady=20)
 
         cache_blocks_label = tk.Label(input_frame, text="Input # of Cache Blocks:", font=("Arial", 10, 'bold'), fg='white',  bg='black')
@@ -65,7 +72,8 @@ class Cache_GUI(tk.Tk):
 
     def run_simulation(self, step_by_step):
         try:
-            num_cache_blocks = int(self.cache_blocks_entry.get())
+            num_cache_blocks = 8
+            #num_cache_blocks = int(self.cache_blocks_entry.get())
         except ValueError:
             tk.messagebox.showerror("Error", "Please enter a valid number of cache blocks.")
             return
