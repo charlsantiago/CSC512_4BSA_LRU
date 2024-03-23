@@ -69,7 +69,7 @@ class Window:
         out1 = Label(output_frame, text = "Memory Access Count:",font=("Arial",10,'bold'),anchor=W).pack(fill=X)
         self.res1_var = StringVar()
         res1 = Label(output_frame, textvariable=self.res1_var, font=("Arial",10,),anchor=W,background="#f1f7ed").pack(fill=X)
-        out2 = Label(output_frame, text = "Cache Hit Count: 1024 blocks",font=("Arial",10,'bold'),anchor=W).pack(fill=X)
+        out2 = Label(output_frame, text = "Cache Hit Count:",font=("Arial",10,'bold'),anchor=W).pack(fill=X)
         self.res2_var = StringVar()
         res2 = Label(output_frame, textvariable=self.res2_var, font=("Arial",10,),anchor=W,background="#f1f7ed").pack(fill=X)
         out3 = Label(output_frame, text = "Cache Miss Count",font=("Arial",10,'bold'),anchor=W).pack(fill=X)
