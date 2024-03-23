@@ -1,4 +1,4 @@
-![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/20479b89-cbe9-4ae6-a7ef-bd286447a269)
+![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/f3e02ac3-3acb-42a3-acf2-e69a967c6b50)
 ----
 ## Instructions in Running the Program:
 1. Open your machine's CLI
