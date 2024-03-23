@@ -45,7 +45,7 @@ https://drive.google.com/file/d/1SWOVWOcq94HJRUwPKYwgR1X7Khxu7kp5/view?usp=drive
 ***Memory Access Count:*** 128
 
 #### Sequence (Hit/Miss and Set) Placement
-![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/6d4f2a5e-d6f4-49ae-8d3b-4309bc510cb6)
+![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/4e925eeb-069f-441c-a0fc-cc1cd159ba22)
 
 #### Final Cache Memory Snapshot
 ![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/23b42f50-84cb-41a0-b364-16537e20034c)
@@ -60,7 +60,7 @@ https://drive.google.com/file/d/1SWOVWOcq94HJRUwPKYwgR1X7Khxu7kp5/view?usp=drive
 ***Memory Access Count:*** 368
 
 #### Sequence (Hit/Miss and Set) Placement
-![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/a689ac73-c5de-43dc-90db-c8e64095c198)
+![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/f16dc9d3-a274-4b93-b46f-87aefbdd7a4e)
 
 #### Final Cache Memory Snapshot
 ![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/77dcbd4a-6bfc-43ec-8138-63dc89eec2c9)
