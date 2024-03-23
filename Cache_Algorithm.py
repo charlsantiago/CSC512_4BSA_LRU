@@ -59,8 +59,8 @@ class Cache_Algorithm:
         self.trace.append(f"3. Cache Miss Count: {self.miss_count}\n")
         self.trace.append(f"4. Cache Hit Rate: {self.hit_rate:.2f}%\n")
         self.trace.append(f"5. Cache Miss Rate: {self.miss_rate:.2f}%\n")
-        self.trace.append(f"6. Average Memory Access Time: {self.avg_access_time:.2f} cycles\n")
-        self.trace.append(f"7. Total Memory Access Time: {self.total_access_time:.2f} cycles\n")
+        self.trace.append(f"6. Average Memory Access Time: {self.avg_access_time:.2f} ns\n")
+        self.trace.append(f"7. Total Memory Access Time: {self.total_access_time:.2f} ns\n")
 
 
     def memory_access(self, block):
