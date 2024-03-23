@@ -1,7 +1,4 @@
-# MC02: 4WAY BLOCK SET ASSOCIATIVE + LEAST RECENTLY USED
-CSC512C - G02 - Group 2 (4 Way BSA + LRU)
-Calamiong, Yno Andrei
-Santiago, Charl Joseph
+![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/20479b89-cbe9-4ae6-a7ef-bd286447a269)
 ----
 ## Instructions in Running the Program:
 1. Open your machine's CLI
