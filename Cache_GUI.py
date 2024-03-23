@@ -15,6 +15,8 @@ class Window:
         subtitle2.pack(side="bottom")
 
         lowerframe = Frame(master)
+        lowerframe.pack(expand = True, fill = BOTH ,padx=10,pady=5, side = "bottom")
+
         detailsframe = Frame(lowerframe, background="#f1f7ed",width=30)
         detailsframe.pack(expand = False, fill = Y, side=LEFT)
 
@@ -96,17 +98,21 @@ class Window:
         self.result_text.pack(expand=True, fill=BOTH, side=LEFT)
 
 
- 
         subframe3 = Frame(lowerframe, background="#f1f7ed")
-        seq_table = Label(subframe3, text= "Sequence Hit/Miss Block")
-        seq_table.place(relx=0.5, rely=0.5,anchor=CENTER)
-        subframe3.pack(expand=True, fill=BOTH, side=LEFT, padx = 5)
+        subframe3.pack(expand=True, fill=BOTH, side=LEFT,padx=10)
+        scrollbar = Scrollbar(subframe3, orient=VERTICAL)
+        self.sequence_text = Text(subframe3,background="#f1f7ed",state=DISABLED,width=10,yscrollcommand=scrollbar.set)
+        scrollbar.config(command=self.sequence_text.yview)
+        scrollbar.pack(side=RIGHT, fill=Y)
+        self.sequence_text.pack(expand=True, fill=BOTH, side=LEFT)
+
         
-        lowerframe.pack(expand = True, fill = BOTH ,padx=10,pady=5, side = "bottom")
 
     def run_simulation(self, test_case, state):
         self.result_text["state"]=NORMAL
+        self.sequence_text["state"]=NORMAL
         
+        self.sequence_text.delete(1.0, END)
         self.result_text.delete(1.0, END)
         simulator = Cache_Algorithm(8, 64, 'non-load-through', 8, 4)
 
@@ -116,6 +122,10 @@ class Window:
                 self.result_text.insert(END, cache_snapshot)
         else:
             self.result_text.insert(END, "".join(simulator.trace))
+
+        self.sequence_text.insert(END, "".join(simulator.log))
+        self.sequence_text["state"]=DISABLED
+
 
         self.result_text.insert(END, "Simulation Completed!\n")
         self.result_text["state"]=DISABLED
@@ -132,6 +142,10 @@ class Window:
         self.result_text["state"]=NORMAL
         self.result_text.delete(1.0, END)
         self.result_text["state"]=DISABLED
+
+        self.sequence_text["state"]=NORMAL
+        self.sequence_text.delete(1.0, END)
+        self.sequence_text["state"]=DISABLED
 
 if __name__ == "__main__":
     root = Tk()
