@@ -98,8 +98,8 @@ class Window:
 
  
         subframe3 = Frame(lowerframe, background="#f1f7ed")
-        email = Label(subframe3, text= "Sequence Hit/Miss Block")
-        email.place(relx=0.5, rely=0.5,anchor=CENTER)
+        seq_table = Label(subframe3, text= "Sequence Hit/Miss Block")
+        seq_table.place(relx=0.5, rely=0.5,anchor=CENTER)
         subframe3.pack(expand=True, fill=BOTH, side=LEFT, padx = 5)
         
         lowerframe.pack(expand = True, fill = BOTH ,padx=10,pady=5, side = "bottom")
