@@ -21,23 +21,25 @@ https://drive.google.com/file/d/1UFCWNH11ulI3kjHn2p8id42A-Dlpc2m9/view?usp=shari
 4. Cache Block Size: 4
 5. Read Policy: Non Load-Through
 6. Miss Penalty: 44
-7. Cache Hit Default Time: 1 ns (or cycle)
-8. Cache Miss Default Time: 10 ns (or cycle)
+7. Cache Hit Default Time: 1 ns
+8. Cache Miss Default Time: 10 ns
 
+----
 ## Analysis
 ### **Test-Case 1: Sequential Sequence**
 ***Sequence Value (4x):*** [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63]<br>
-**Memory Access Count:** 256
+***Memory Access Count:*** 256
 
 #### Statistics of the Test Case
 
 #### Final Cache Memory Snapshot
-![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/4dff2a26-dd7a-4f49-ac8c-bf75b5123c02)
+![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/86ce2a8a-b60a-493b-a560-c6a8eb3a2b6e)
 
 
+----
 ### **Test-Case 2: Random Sequence**
 ***Sequence Value:*** <<ranging from 0-128>><br>
-**Memory Access Count:** 128
+***Memory Access Count:*** 128
 
 #### Statistics of the Test Case
 
@@ -46,9 +48,10 @@ https://drive.google.com/file/d/1UFCWNH11ulI3kjHn2p8id42A-Dlpc2m9/view?usp=shari
 
 
 
+----
 ### **Test-Case 3: Mid-Repeat Sequence**
 ***Sequence Value:*** [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63]<br>
-**Memory Access Count:** 368
+***Memory Access Count:*** 368
 
 #### Statistics of the Test Case
 
