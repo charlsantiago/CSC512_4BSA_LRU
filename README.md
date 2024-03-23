@@ -1,4 +1,4 @@
-![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/f3e02ac3-3acb-42a3-acf2-e69a967c6b50)
+![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/7fe3d86c-5d11-4815-b431-32ad6a7a2487)![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/f3e02ac3-3acb-42a3-acf2-e69a967c6b50)
 ----
 ## Instructions in Running the Program:
 1. Open your machine's CLI
@@ -30,10 +30,13 @@ https://drive.google.com/file/d/1SWOVWOcq94HJRUwPKYwgR1X7Khxu7kp5/view?usp=drive
 ***Sequence Value (4x):*** [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63]<br>
 ***Memory Access Count:*** 256
 
-#### Statistics of the Test Case
+#### Sequence (Hit/Miss and Set) Placement
+![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/6d4f2a5e-d6f4-49ae-8d3b-4309bc510cb6)
 
 #### Final Cache Memory Snapshot
 ![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/b5089bf6-30bf-4b73-b64f-b9fbf7e42a40)
+
+#### Analysis
 
 
 ----
@@ -41,10 +44,13 @@ https://drive.google.com/file/d/1SWOVWOcq94HJRUwPKYwgR1X7Khxu7kp5/view?usp=drive
 ***Sequence Value:*** <<ranging from 0-128>><br>
 ***Memory Access Count:*** 128
 
-#### Statistics of the Test Case
+#### Sequence (Hit/Miss and Set) Placement
+![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/6d4f2a5e-d6f4-49ae-8d3b-4309bc510cb6)
 
 #### Final Cache Memory Snapshot
 ![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/23b42f50-84cb-41a0-b364-16537e20034c)
+
+#### Analysis
 
 
 
@@ -53,10 +59,13 @@ https://drive.google.com/file/d/1SWOVWOcq94HJRUwPKYwgR1X7Khxu7kp5/view?usp=drive
 ***Sequence Value:*** [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63]<br>
 ***Memory Access Count:*** 368
 
-#### Statistics of the Test Case
+#### Sequence (Hit/Miss and Set) Placement
+![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/6d4f2a5e-d6f4-49ae-8d3b-4309bc510cb6)
 
 #### Final Cache Memory Snapshot
 ![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/77dcbd4a-6bfc-43ec-8138-63dc89eec2c9)
+
+#### Analysis
 
 
 
