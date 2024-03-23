@@ -11,7 +11,7 @@
 
 
 ## Link to Video Walkthrough:
-https://drive.google.com/file/d/1UFCWNH11ulI3kjHn2p8id42A-Dlpc2m9/view?usp=sharing
+https://drive.google.com/file/d/1SWOVWOcq94HJRUwPKYwgR1X7Khxu7kp5/view?usp=drive_link
 
 
 ## Common Specifications:
