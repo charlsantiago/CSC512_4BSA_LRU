@@ -29,12 +29,16 @@ https://drive.google.com/file/d/1UFCWNH11ulI3kjHn2p8id42A-Dlpc2m9/view?usp=shari
 Sequence Value (4x):
 [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63]
 
+#### Statistics of the Test Case
+
 #### Final Cache Memory Snapshot
 ![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/4dff2a26-dd7a-4f49-ac8c-bf75b5123c02)
 
 
 ### **Test-Case 2: Random Sequence**
 Sequence Value: <<ranging from 0-128>>
+
+#### Statistics of the Test Case
 
 #### Final Cache Memory Snapshot
 ![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/a436b6d7-4c49-4e9c-8392-f3ec263beadd)
@@ -44,6 +48,8 @@ Sequence Value: <<ranging from 0-128>>
 ### **Test-Case 3: Mid-Repeat Sequence**
 Sequence Value: 
 [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63]
+
+#### Statistics of the Test Case
 
 #### Final Cache Memory Snapshot
 ![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/88d031e2-50fa-46b4-8aa0-d46985c9807c)
