@@ -37,7 +37,7 @@ https://drive.google.com/file/d/1SWOVWOcq94HJRUwPKYwgR1X7Khxu7kp5/view?usp=drive
 ![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/b5089bf6-30bf-4b73-b64f-b9fbf7e42a40)
 
 #### Test Case Analysis
-> In test case 1 (Sequential Access), there are 256 memory access counts in the main memory. In total, there are 0 Cache Hit Counts and 256 Cache Miss Counts, since there are no blocks found in the cache memory in the sequence. With a 0% Hit Rate and 100% Miss Count, the Average Memory Access Time is 44ns, and the Total Memory Access Time is 11520ns. In this scenario, it is expected to have 0 hit counts since the sequence to pass in the cache memory will not repeat within the 32 blocks. The Sequential Access scenario will have the slowest XXXXXX since the CPU will have to fetch the memory in the main memory every time as it is not available in the cache memory.
+<p> In test case 1 (Sequential Access), there are 256 memory access counts in the main memory. In total, there are 0 Cache Hit Counts and 256 Cache Miss Counts, since there are no blocks found in the cache memory in the sequence. With a 0% Hit Rate and 100% Miss Count, the Average Memory Access Time is 44ns, and the Total Memory Access Time is 11520ns. In this scenario, it is expected to have 0 hit counts since the sequence to pass in the cache memory will not repeat within the 32 blocks. The Sequential Access scenario will have the slowest XXXXXX since the CPU will have to fetch the memory in the main memory every time as it is not available in the cache memory.
 
 
 ----
@@ -52,7 +52,7 @@ https://drive.google.com/file/d/1SWOVWOcq94HJRUwPKYwgR1X7Khxu7kp5/view?usp=drive
 ![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/23b42f50-84cb-41a0-b364-16537e20034c)
 
 #### Test Case Analysis
-> In test case 2 (Random Access), there are 128 memory access counts in the main memory. For this scenario, there are X Cache Hit Counts (30.43% Hit Rate) and X Cache Miss Counts (69.57% Miss Count), the Average Memory Access Time is X ns, and the Total Memory Access Time is X ns. Since the sequence of this test case is random, the values of the counts, the rates, and the access time vary per execution. In this scenario, we cannot actually declare if it is faster or slower than the Mid-Repeat Access test case; however, we can have an insight into how caching really works in an unsorted scenario.
+<p> In test case 2 (Random Access), there are 128 memory access counts in the main memory. For this scenario, there are X Cache Hit Counts (30.43% Hit Rate) and X Cache Miss Counts (69.57% Miss Count), the Average Memory Access Time is X ns, and the Total Memory Access Time is X ns. Since the sequence of this test case is random, the values of the counts, the rates, and the access time vary per execution. In this scenario, we cannot actually declare if it is faster or slower than the Mid-Repeat Access test case; however, we can have an insight into how caching really works in an unsorted scenario.
 
 
 ----
@@ -67,7 +67,7 @@ https://drive.google.com/file/d/1SWOVWOcq94HJRUwPKYwgR1X7Khxu7kp5/view?usp=drive
 ![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/77dcbd4a-6bfc-43ec-8138-63dc89eec2c9)
 
 #### Test Case Analysis
-In test case 3 (Mid-Repeat Access), there are 368 memory access counts in the main memory. In total, there are 112 Cache Hit Counts and 256 Cache Miss Counts, since there are no blocks found in the cache memory in the sequence. With a 30.43% Hit Rate and 69.57% Miss Count, the Average Memory Access Time is 30.92 ns, and the Total Memory Access Time is 11968 ns. In this scenario, it is expected to have 112 hit counts (28 hits per set of the sequence) since the block will be available within the 32 cache block replacement. It is also expected that the values from 4 to 31 are expected to have a HIT since it is repeated after the first 4-31. The Mid-Repeat Access Scenario will be much faster than the Sequential Access (and may or may not be faster than the Random Access) since it is expected that the blocks from 4 to 31 (repeated after the first loop) will be found in the cache memory, so there is no need to fetch it anymore in the main memory.
+<p> In test case 3 (Mid-Repeat Access), there are 368 memory access counts in the main memory. In total, there are 112 Cache Hit Counts and 256 Cache Miss Counts, since there are no blocks found in the cache memory in the sequence. With a 30.43% Hit Rate and 69.57% Miss Count, the Average Memory Access Time is 30.92 ns, and the Total Memory Access Time is 11968 ns. In this scenario, it is expected to have 112 hit counts (28 hits per set of the sequence) since the block will be available within the 32 cache block replacement. It is also expected that the values from 4 to 31 are expected to have a HIT since it is repeated after the first 4-31. The Mid-Repeat Access Scenario will be much faster than the Sequential Access (and may or may not be faster than the Random Access) since it is expected that the blocks from 4 to 31 (repeated after the first loop) will be found in the cache memory, so there is no need to fetch it anymore in the main memory.
 
 
 ## Summary:
