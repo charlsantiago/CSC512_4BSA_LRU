@@ -71,4 +71,5 @@ In test case 2 (Random Access), there are 128 memory access counts in the main m
 
 
 ## Summary:
+![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/f6574110-1163-4665-9cb2-41549632d569)
 In conclusion, we have noticed that the 4-Way Block-Set Associative using Least Recently Used as the replacement algorithm will make the caching memory to be breakdown in 8 sets with 4 blocks each. Given that the cache memory has only 32 blocks, the Sequential Access (for 64 sequenced values) is expected to be slower than the Mid-Repeat Access (for 28 sequenced values) since there will be no hit counts found while the Mid-Repeat Access is expected to have 28 hit counts. The Random Access is a perfect scenario for an unsorted sequence. We can also conclude that the Memory Access Time will be affected if there are more MISS counts. However, if the sequence will have a 100% Hit, then we can assume that the memory access time will be the hit counts times the block size. Also, take note that for every HIT, the CPU will just search within the Cache Memory and for every MISS, the CPU will have to search within the Main Memory causing the caching to be slower.
