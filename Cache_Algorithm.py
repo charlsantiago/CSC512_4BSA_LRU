@@ -1,10 +1,12 @@
 from random import randrange
 import pandas as pd
 import numpy as np
+import math
 
 class Cache_Algorithm:
     def __init__(self, cache_blocks, line_size, policy, memory_blocks, associativity):
-        self.cache_blocks = cache_blocks
+        cache_line_blocks = int(math.log(line_size, 2))
+        self.set_blocks = int((memory_blocks/cache_blocks)/cache_line_blocks)
         self.line_size = line_size
         self.policy = policy
         self.memory_blocks = memory_blocks
@@ -21,7 +23,7 @@ class Cache_Algorithm:
         self.total_access_time = 0
         
         self.cache = {i: {'blocks': ['X'] * self.associativity, 'lru': list(range(self.associativity))}
-                      for i in range(self.cache_blocks)}
+                      for i in range(self.set_blocks)}
         
 
     def snapshot(self, step, current_block):
@@ -41,7 +43,6 @@ class Cache_Algorithm:
     def statistics(self):
         self.hit_rate = self.hit_count / self.access_count * 100 if self.access_count > 0 else 0
         self.miss_rate = self.miss_count / self.access_count * 100 if self.access_count > 0 else 0
-        #miss_penalty = 22
         miss_penalty = (4 * (1+10))
 
         avg_access_time_hit = (1 * (self.hit_count / self.access_count)) 
@@ -64,7 +65,7 @@ class Cache_Algorithm:
 
     def memory_access(self, block):
         self.access_count += 1
-        cache_index = block % self.cache_blocks
+        cache_index = block % self.set_blocks
         if block in self.cache[cache_index]['blocks']:
             self.log.append(f"Sequence: {block} | HIT | Set: {cache_index} \n")
             self.hit_count += 1
@@ -93,6 +94,7 @@ class Cache_Algorithm:
         if not step_by_step:
             self.trace.append(self.snapshot(len(sequence), None))
         self.statistics()
+
 
     def generate_sequence(self, test_case):
         sequence = []
