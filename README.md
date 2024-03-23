@@ -60,7 +60,7 @@ https://drive.google.com/file/d/1SWOVWOcq94HJRUwPKYwgR1X7Khxu7kp5/view?usp=drive
 ***Memory Access Count:*** 368
 
 #### Sequence (Hit/Miss and Set) Placement
-![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/a689ac73-c5de-43dc-90db-c8e64095c198)![image]
+![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/a689ac73-c5de-43dc-90db-c8e64095c198)
 
 #### Final Cache Memory Snapshot
 ![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/77dcbd4a-6bfc-43ec-8138-63dc89eec2c9)
