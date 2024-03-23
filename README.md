@@ -1,7 +1,28 @@
-# 4WAY BLOCK SET ASSOCIATIVE + LEAST RECENTLY USED
+# MC02: 4WAY BLOCK SET ASSOCIATIVE + LEAST RECENTLY USED
 CSC512C - G02 - Group 2 (4 Way BSA + LRU)
+Calamiong, Yno Andrei
+Santiago, Charl Joseph
 ----
-## Temporary README.md
+## Instructions in Running the Program:
+1. Open your machine's CLI
+2. Go to the project directory containing Cache_GUI.py
+3. Run python Cache_GUI.py
+4. The TKinter GUI will open.
+5. Check or Uncheck the "Step-by-step Animation" option.
+6. To run the simulation, choose the Test Case among the following options: (Sequential, Random, Mid-Repeat)
+7. After running the simulation, press "Reset" button to cleanup the output.
+
+
+## Link to Video Walkthrough:
+https://drive.google.com/drive/u/7/folders/1zweJy--GdZ5qiGIqI_PLn3HxB2c0y7rr
+
+
+## Analysis
+
+
+
+
+## MC02 Description
 
 
 Design a cache simulation system and analyze the various test set scenarios of the assigned cache mapping and replacement policy.<br>
