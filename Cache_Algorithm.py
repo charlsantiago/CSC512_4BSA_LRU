@@ -9,8 +9,8 @@ class Cache_Algorithm:
         self.policy = policy
         self.memory_blocks = memory_blocks
         self.associativity = associativity
-        self.memory = list(range(self.memory_blocks))
         self.trace = [] 
+        self.log = [] 
         self.access_count = 0
         self.hit_rate = 0
         self.miss_rate = 0
@@ -24,7 +24,6 @@ class Cache_Algorithm:
         
 
     def snapshot(self, step, current_block):
-        print("-----------------------------")
         data_arr=[]
         snapshot = f"Step: {step}, Current Cache Memory:\n"
         if current_block is not None:
@@ -33,7 +32,7 @@ class Cache_Algorithm:
             data_arr.append(data['blocks'])
         age_df = pd.DataFrame(data = np.array(data_arr), columns = ['Block 0', 'Block 1', 'Block 2', 'Block 3'] )
         snapshot+= age_df.to_string()
-        snapshot += "\n---------------------\n\n"
+        snapshot += "\n--------------------------\n\n"
 
         return snapshot
 
@@ -64,13 +63,13 @@ class Cache_Algorithm:
         self.access_count += 1
         cache_index = block % self.cache_blocks
         if block in self.cache[cache_index]['blocks']:
-            print(f"Sequence: {block} | HIT | Set: {cache_index}")
+            self.log.append(f"Sequence: {block} | HIT | Set: {cache_index} \n")
             self.hit_count += 1
             block_index = self.cache[cache_index]['blocks'].index(block)
             self.cache[cache_index]['lru'].remove(block_index)
             self.cache[cache_index]['lru'].append(block_index)
         else:
-            print(f"Sequence: {block} | MISS | Set: {cache_index}")
+            self.log.append(f"Sequence: {block} | MISS | Set: {cache_index} \n")
             self.miss_count += 1
             if len(self.cache[cache_index]['blocks']) < self.associativity:
                 self.cache[cache_index]['blocks'][0] = block
@@ -82,6 +81,7 @@ class Cache_Algorithm:
 
     def run_simulation(self, test_case, step_by_step=True):
         sequence = self.generate_sequence(test_case)
+        self.log = []
         for step, block in enumerate(sequence, start=1):
             self.memory_access(block)
             if step_by_step:
@@ -89,7 +89,6 @@ class Cache_Algorithm:
 
         if not step_by_step:
             self.trace.append(self.snapshot(len(sequence), None))
-
         self.statistics()
 
     def generate_sequence(self, test_case):
@@ -111,3 +110,7 @@ class Cache_Algorithm:
         else:
             raise ValueError("Invalid test case")
         return sequence
+
+
+
+
