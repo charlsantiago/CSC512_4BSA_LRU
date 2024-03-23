@@ -1,4 +1,4 @@
-![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/7fe3d86c-5d11-4815-b431-32ad6a7a2487)![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/f3e02ac3-3acb-42a3-acf2-e69a967c6b50)
+![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/a689ac73-c5de-43dc-90db-c8e64095c198)![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/7fe3d86c-5d11-4815-b431-32ad6a7a2487)![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/f3e02ac3-3acb-42a3-acf2-e69a967c6b50)
 ----
 ## Instructions in Running the Program:
 1. Open your machine's CLI
@@ -60,7 +60,7 @@ https://drive.google.com/file/d/1SWOVWOcq94HJRUwPKYwgR1X7Khxu7kp5/view?usp=drive
 ***Memory Access Count:*** 368
 
 #### Sequence (Hit/Miss and Set) Placement
-![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/6d4f2a5e-d6f4-49ae-8d3b-4309bc510cb6)
+![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/d738c082-8909-4e55-b3b7-e7d7a0982e16)
 
 #### Final Cache Memory Snapshot
 ![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/77dcbd4a-6bfc-43ec-8138-63dc89eec2c9)
