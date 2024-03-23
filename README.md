@@ -14,6 +14,16 @@
 https://drive.google.com/file/d/1UFCWNH11ulI3kjHn2p8id42A-Dlpc2m9/view?usp=sharing
 
 
+## Common Specifications:
+1. Number of Cache Blocks: 32 blocks
+2. Number of Memory Blocks: 1024 blocks
+3. Cache Line: 16 words
+4. Cache Block Size: 4
+5. Read Policy: Non Load-Through
+6. Miss Penalty: 44
+7. Cache Hit Default Time: 1 ns (or cycle)
+8. Cache Miss Default Time: 10 ns (or cycle)
+
 ## Analysis
 ### **Test-Case 1: Sequential Sequence**
 Sequence Value (4x):
