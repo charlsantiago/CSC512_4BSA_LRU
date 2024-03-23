@@ -33,7 +33,7 @@ https://drive.google.com/file/d/1UFCWNH11ulI3kjHn2p8id42A-Dlpc2m9/view?usp=shari
 #### Statistics of the Test Case
 
 #### Final Cache Memory Snapshot
-![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/86ce2a8a-b60a-493b-a560-c6a8eb3a2b6e)
+![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/b5089bf6-30bf-4b73-b64f-b9fbf7e42a40)
 
 
 ----
@@ -44,7 +44,7 @@ https://drive.google.com/file/d/1UFCWNH11ulI3kjHn2p8id42A-Dlpc2m9/view?usp=shari
 #### Statistics of the Test Case
 
 #### Final Cache Memory Snapshot
-![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/a436b6d7-4c49-4e9c-8392-f3ec263beadd)
+![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/23b42f50-84cb-41a0-b364-16537e20034c)
 
 
 
@@ -56,7 +56,7 @@ https://drive.google.com/file/d/1UFCWNH11ulI3kjHn2p8id42A-Dlpc2m9/view?usp=shari
 #### Statistics of the Test Case
 
 #### Final Cache Memory Snapshot
-![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/88d031e2-50fa-46b4-8aa0-d46985c9807c)
+![image](https://github.com/charlsantiago/CSC512_4BSA_LRU/assets/77201252/77dcbd4a-6bfc-43ec-8138-63dc89eec2c9)
 
 
 
