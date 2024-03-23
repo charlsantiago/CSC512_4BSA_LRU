@@ -18,7 +18,6 @@ class Window:
         detailsframe = Frame(lowerframe, background="#f1f7ed",width=30)
         detailsframe.pack(expand = False, fill = Y, side=LEFT)
 
-
         ##################################
         # SPECIFICATIONS SET
         ##################################
@@ -89,7 +88,6 @@ class Window:
         self.res7_var = StringVar()
         res7 = Label(output_frame, textvariable=self.res7_var, font=("Arial",10,),anchor=W,background="#f1f7ed").pack(fill=X)
 
-
         ##################################
         # STEP-BY-STEP MEMORY SNAPSHOT
         ##################################
@@ -100,7 +98,6 @@ class Window:
         scrollbar.config(command=self.result_text.yview)
         scrollbar.pack(side=RIGHT, fill=Y)
         self.result_text.pack(expand=True, fill=BOTH, side=LEFT)
-
 
         ##################################
         # SEQUENCE | HIT/MISS | BLOCK
@@ -114,13 +111,12 @@ class Window:
         self.sequence_text.pack(expand=True, fill=BOTH, side=LEFT)
 
         
-
     def run_simulation(self, test_case, state):
         self.result_text["state"]=NORMAL
         self.sequence_text["state"]=NORMAL
         self.sequence_text.delete(1.0, END)
         self.result_text.delete(1.0, END)
-        simulator = Cache_Algorithm(8, 64, 'non-load-through', 8, 4)
+        simulator = Cache_Algorithm(32, 16, 'non-load-through', 1024, 4)
 
         simulator.run_simulation(test_case, state)
         if state:
@@ -150,6 +146,7 @@ class Window:
         self.sequence_text["state"]=NORMAL
         self.sequence_text.delete(1.0, END)
         self.sequence_text["state"]=DISABLED
+
 
 if __name__ == "__main__":
     root = Tk()
