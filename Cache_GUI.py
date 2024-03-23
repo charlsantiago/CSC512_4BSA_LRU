@@ -25,10 +25,11 @@ class Window:
         specs_frame = Frame(detailsframe, background="#f1f7ed",width=30)
         specs_frame.pack(expand = False, fill = BOTH, side=TOP)
         info = Label(specs_frame, text = "SPECIFICATIONS",font=("Arial Black",20,'bold'),bg='#243e36',fg='white').pack(fill=X)
-        info1 = Label(specs_frame, text = "Number of cache blocks: 32 blocks",font=("Arial",10,'bold'),anchor=W).pack(fill=X)
-        info2 = Label(specs_frame, text = "Number of memory blocks: 1024 blocks",font=("Arial",10,'bold'),anchor=W).pack(fill=X)
-        info3 = Label(specs_frame, text = "Cache line: 16 words",font=("Arial",10,'bold'),anchor=W).pack(fill=X)
-        info4 = Label(specs_frame, text = "Read policy: Non Load-Through",font=("Arial",10,'bold'),anchor=W).pack(fill=X)
+        info1 = Label(specs_frame, text = "Number of Cache Blocks: 32 blocks",font=("Arial",10,'bold'),anchor=W).pack(fill=X)
+        info2 = Label(specs_frame, text = "Number of Memory Blocks: 1024 blocks",font=("Arial",10,'bold'),anchor=W).pack(fill=X)
+        info3 = Label(specs_frame, text = "Cache Line: 16 words",font=("Arial",10,'bold'),anchor=W).pack(fill=X)
+        info5 = Label(specs_frame, text = "Cache Block Size: 4",font=("Arial",10,'bold'),anchor=W).pack(fill=X)
+        info4 = Label(specs_frame, text = "Read Policy: Non Load-Through",font=("Arial",10,'bold'),anchor=W).pack(fill=X)
 
         ##################################
         # BUTTONS 
