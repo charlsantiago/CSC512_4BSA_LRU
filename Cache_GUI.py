@@ -22,6 +22,8 @@ class Window:
 
 
         ##################################
+        # SPECIFICATIONS SET
+        ##################################
         specs_frame = Frame(detailsframe, background="#f1f7ed",width=30)
         specs_frame.pack(expand = False, fill = BOTH, side=TOP)
         info = Label(specs_frame, text = "SPECIFICATIONS",font=("Arial Black",20,'bold'),bg='#243e36',fg='white').pack(fill=X)
@@ -31,11 +33,12 @@ class Window:
         info4 = Label(specs_frame, text = "Read policy: Non Load-Through",font=("Arial",10,'bold'),anchor=W).pack(fill=X)
 
         ##################################
+        # BUTTONS 
+        ##################################
         step_by_step_var = BooleanVar()
         step_by_step_checkbox = Checkbutton(detailsframe, text="Step-by-Step Animation", variable=step_by_step_var, 
                                             background="#f1f7ed",font=("Arial",10,'bold')).pack(fill=X)
 
-        ##################################
         space_frame = Frame(detailsframe, background="#f1f7ed",width=30,height=10).pack(fill=X,side=TOP)
 
         simulation_button_frame = Frame(detailsframe, background="#f1f7ed",width=35)
@@ -52,16 +55,16 @@ class Window:
                                  text="Mid-Repeat",height=2, width=11, bg="#243e36", fg="white",  font=("Arial",10,'bold'),
                                  command=lambda: self.run_simulation("Mid-Repeat", step_by_step_var.get())).pack(side=LEFT)
 
-
-        ##################################
         reset_button = Button(detailsframe, relief=GROOVE, 
                               text="Reset",height=1, width=30, bg="#243e36", fg="white",  font=("Arial Black",10),
                               command=self.reset_display)
         reset_button.pack(expand = False, fill = BOTH, side=TOP,anchor=CENTER)
 
-        ##################################
         space_frame = Frame(detailsframe, background="#f1f7ed",width=30,height=10).pack(fill=X,side=TOP)
 
+        ##################################
+        # SYSTEM OUTPUT 
+        ##################################
         output_frame = Frame(detailsframe, background="#f1f7ed",width=30)
         output_frame.pack(expand = True, fill = BOTH, side=TOP)
         out = Label(output_frame, text = "OUTPUT",font=("Arial Black",20,'bold'),bg='#243e36',fg='white').pack(fill=X)
@@ -89,6 +92,8 @@ class Window:
 
 
         ##################################
+        # STEP-BY-STEP MEMORY SNAPSHOT
+        ##################################
         subframe2 = Frame(lowerframe, background="#f1f7ed")
         subframe2.pack(expand=True, fill=BOTH, side=LEFT,padx=10)
         scrollbar = Scrollbar(subframe2, orient=VERTICAL)
@@ -98,6 +103,9 @@ class Window:
         self.result_text.pack(expand=True, fill=BOTH, side=LEFT)
 
 
+        ##################################
+        # SEQUENCE | HIT/MISS | BLOCK
+        ##################################
         subframe3 = Frame(lowerframe, background="#f1f7ed")
         subframe3.pack(expand=True, fill=BOTH, side=LEFT,padx=10)
         scrollbar = Scrollbar(subframe3, orient=VERTICAL)
@@ -111,7 +119,6 @@ class Window:
     def run_simulation(self, test_case, state):
         self.result_text["state"]=NORMAL
         self.sequence_text["state"]=NORMAL
-        
         self.sequence_text.delete(1.0, END)
         self.result_text.delete(1.0, END)
         simulator = Cache_Algorithm(8, 64, 'non-load-through', 8, 4)
@@ -125,8 +132,6 @@ class Window:
 
         self.sequence_text.insert(END, "".join(simulator.log))
         self.sequence_text["state"]=DISABLED
-
-
         self.result_text.insert(END, "Simulation Completed!\n")
         self.result_text["state"]=DISABLED
         self.res1_var.set(simulator.access_count)
