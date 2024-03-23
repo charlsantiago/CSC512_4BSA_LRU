@@ -9,6 +9,7 @@ class Cache_Algorithm:
         self.policy = policy
         self.memory_blocks = memory_blocks
         self.associativity = associativity
+        self.block_size = 4
         self.trace = [] 
         self.log = [] 
         self.access_count = 0
@@ -40,13 +41,15 @@ class Cache_Algorithm:
     def statistics(self):
         self.hit_rate = self.hit_count / self.access_count * 100 if self.access_count > 0 else 0
         self.miss_rate = self.miss_count / self.access_count * 100 if self.access_count > 0 else 0
-        miss_penalty = 22
+        #miss_penalty = 22
+        miss_penalty = (4 * (1+10))
+
         avg_access_time_hit = (1 * (self.hit_count / self.access_count)) 
         avg_access_time_miss = (miss_penalty * (self.miss_count / self.access_count))
         self.avg_access_time = avg_access_time_hit + avg_access_time_miss
 
-        total_access_time_hit = (2 * self.hit_count * 1) 
-        total_access_time_miss = (self.miss_count * 1) + (self.miss_count * 2 * (1 + 10))
+        total_access_time_hit = (4 * self.hit_count * 1) 
+        total_access_time_miss = (self.miss_count * 1) + (self.miss_count * 4 * (1 + 10))
         self.total_access_time = total_access_time_hit + total_access_time_miss
 
         self.trace.append(f"Simulation Statistics:\n")
@@ -110,7 +113,3 @@ class Cache_Algorithm:
         else:
             raise ValueError("Invalid test case")
         return sequence
-
-
-
-
